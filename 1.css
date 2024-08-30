@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar */
+nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: white;
+    z-index: 999;
+}
+
+nav .navbar{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .navbar a{
+    font-family: roboto ;
+    color: #9f9f9f;
+    text-decoration: none;  
+    font-size: 22px;
+    font-family: roboto;
+    font-weight: 400;
+}
+
+nav .navbar .login{
+    color:white;
+    font-weight: 400;
+    font-size: 22px;
+    background-color: #65D4B3;
+    width: 120px;
+    height: 47px;
+    border: 0px solid white;
+    border-radius: 10px;
+}
+
+/* hero */
+.hero{
+    width: 100%;
+    height:100vh-80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* apbdes */
+.apbdes{
+    height: 301px;
+    background-color: #00A69B;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.apbdes .container-apb h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    font-family: roboto;
+    margin-left: 85px;
+}
+
+.apbdes .container-apb p{
+    font-size: 26px;
+    font-family: roboto;
+    font-weight: 500;
+    color: white;
+}
+
+.apbdes .tampilkan{
+    width: 187px;
+    height: 44px;
+    background-color: white ;
+    border-radius: 10px;
+    border: 0px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #00A69B;
+    margin-left: 204px;
+}
+
+/* container berita & informasi */
+.container-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 176px;
+}
+
+section{
+    width: 80%;
+    height: 790px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* berita */
+.containerberita{
+    width: 482px;
+    height: 790px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.containerberita .berita label{
+    background-color:  #65D4B3;
+    font-family: roboto;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    top: 170px;
+    left: 180px;
+    border-radius: 15px 0px 0px 15px;
+    padding: 8.5px 15px;
+}
+
+.containerberita h2{
+    text-decoration: underline;
+    color: #9E9E9E;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: roboto;
+    margin-bottom: 60px;
+}
+
+.containerberita .berita img{
+    border-radius: 15px;
+    margin-top: 46px; margin-top: 46px;
+}
+
+.containerberita .berita .txberita{
+    display: inline-block;
+    word-spacing: 2px;
+    margin-left: 42px;
+}
+
+.containerberita .berita .txberita p{
+    color: #9f9f9f;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: roboto;
+}
+
+.containerberita .berita .txberita h1{
+    color: #9f9f9f;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: roboto;
+}
+
+.containerberita .berita .txberita .admin{
+    color: #9f9f9f;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: roboto;
+    margin-top: 11px;
+}
+
+.containerberita .lihatsemua{
+    margin-top: 46px;
+    background-color: #65D4B3;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: roboto;
+    border: 0px;
+    border-radius: 7px;
+    width: 173px;
+    height: 38px;
+}
+
+/* informasi */
+.containerinformasi{
+    width: 482px;
+    height: 790px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.containerinformasi h2{
+    text-decoration: underline;
+    color: #9E9E9E;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: roboto;
+    margin-bottom: 60px;
+}
+
+.containerinformasi .informasi img{
+    border-radius: 50%;
+    margin-top: 46px;
+}
+
+.containerinformasi .informasi .txinformasi{
+    display: inline-block;
+    letter-spacing: 0px;
+    word-spacing: 2px;
+    margin-left: 42px;
+}
+
+.containerinformasi .informasi .txinformasi p{
+    color: #9f9f9f;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: roboto;
+}
+
+.containerinformasi .informasi .txinformasi h1{
+    color: #9f9f9f;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: roboto;
+}
+
+.containerinformasi .informasi .txinformasi .tempat{
+    color: #9f9f9f;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: roboto;
+    margin-top: 11px;
+}
+
+.containerinformasi .lihatsemua{
+    margin-top: 46px;
+    background-color: #65D4B3;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: roboto;
+    border: 0px;
+    border-radius: 7px;
+    width: 173px;
+    height: 38px;
+}
+
+hr{
+    width: 80%;
+    margin-top: 86px;
+    margin-left: 129px;
+    margin-bottom: 69;
+}
+
+/* poteni */
+.container-potensi{
+    width: 100%;
+}
+
+.container-potensi .potensi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-potensi .potensi .sec{
+    width: 85%;
+    height: max-content;
+    gap: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 88px;
+}
+
+.container-potensi h1{
+    font-family: roboto;
+    font-weight: 700;
+    font-size: 30px;
+    color: #9E9E9E;
+    margin-top: 69px;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 53px;
+}
+
+.potensi .card{
+    width: 375px;
+    height: 400px;
+    color: white;
+    box-shadow: 3px 0px 10px  #4d4a4a;
+    border-radius: 15px;
+}
+
+.potensi .card img{
+    border-radius: 15px;
+}
+
+.potensi .card p{
+    margin-left: 39px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: roboto;
+    color: #9E9E9E;
+    margin-top: 14px
+}
+
+/* layanan */
+.layanan{
+    height: 614px;
+    width: 100%;
+    color: #c4c4c4;
+    border: 1px solid #9E9E9E;
+    margin-top: 88px;
+}
+
+.layanan h1{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: roboto;
+    color: #9E9E9E;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 45px;
+}
+
+.layanan section{
+    width: 100%;
+    height: 523px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.layanan section .card-layanan{
+    width: 1207px;
+    height: 268px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* card */
+.layanan section .card-layanan .card{
+    width: 297px;
+    height: 268px;
+    color: #c4c4c4;
+}
+
+.layanan section .card img{
+    margin-left: 100px;
+    margin-bottom: 22px;
+}
+
+.layanan section .card h3{
+    text-align: center;
+    font-family: roboto;
+    font-size: 20px;
+    font-weight: 500;
+    color: #9E9E9E;
+}
+
+.layanan section .card p{
+    text-align: center;
+    font-family: roboto;
+    font-size: 18px;
+    font-weight: 400;
+    color: #9E9E9E;
+}
+
+/* peta */
+.peta{
+    height: 822px;
+    width: 100%;
+    background-color: #8ed6c025;
+    padding-top: 74px;
+}
+
+.peta section{
+    width: 100%;
+    height: 702px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.peta h1{
+    font-family: roboto;
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 30px;
+    color: #9E9E9E;
+    text-align: center;
+}
+
+.peta section .container{
+    width: 1251px;
+    height: 535px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.peta .container .txpeta p{
+    font-family: roboto;
+    font-weight: 500;
+    font-size: 24px;
+    color: #9E9E9E;
+}
+
+.peta .container .txpeta .iconpeta{
+    margin-top: 5px;
+}
+
+.peta .container txpeta .icon{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 128px;
+}
+
+.peta .container .txpeta li{
+    font-size: 22px;
+    font-weight: 500;
+    color: #9E9E9E;
+    font-family: roboto;
+    list-style: none;
+    margin-bottom: 19px;
+}
+
+.peta .container .txpeta .selengkapnya{
+    width: 212px;
+    height: 56px;
+    background-color: #65D4B3;
+    color: white;
+    font-family: roboto;
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 87px;
+    border-radius: 15px;
+    border: 0px;
+}
+
+.peta .container iframe{
+    width: 535px;
+    height: 535px;
+    border-radius: 20px;
+}
+
+/* footer */
+.footer{
+    height: 342px;
+    width: 100%;
+    background-color: #424141;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+
+.footer .container-footer{
+    width: 1208px;
+    height: 148px;
+}
+
+.footer .container-footer p{
+    font-family: roboto;
+    font-weight: 500;
+    font-size: 24px;
+    color: #9f9f9f;
+}
+
+.footer .container-footer .sosmed h4{
+    font-family: roboto;
+    font-weight: 500;
+    font-size: 24px;
+    color: #9f9f9f;
+    margin-top: 24px;
+}
+
+.footer .container-footer .sosmed{
+    width: 1208px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .container-footer .sosmed .icon{
+    width: 280px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
