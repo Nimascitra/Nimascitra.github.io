@@ -100,9 +100,10 @@ nav .navbar .login{
 
 section{
     width: 80%;
-    height: 790px;
+    /* height: 790px; */
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /* berita */
@@ -113,6 +114,11 @@ section{
     justify-content: center;
     flex-wrap: wrap;
     position: relative;
+}
+
+.containerberita .berita{
+    display: flex;
+    margin-top: 46px;
 }
 
 .containerberita .berita label{
@@ -139,7 +145,6 @@ section{
 
 .containerberita .berita img{
     border-radius: 15px;
-    margin-top: 46px; margin-top: 46px;
 }
 
 .containerberita .berita .txberita{
@@ -192,6 +197,10 @@ section{
     flex-wrap: wrap;
 }
 
+.containerinformasi .informasi{
+    display: flex;}
+   
+
 .containerinformasi h2{
     text-decoration: underline;
     color: #9E9E9E;
@@ -207,10 +216,10 @@ section{
 }
 
 .containerinformasi .informasi .txinformasi{
-    display: inline-block;
     letter-spacing: 0px;
     word-spacing: 2px;
     margin-left: 42px;
+    margin-top: 46px;
 }
 
 .containerinformasi .informasi .txinformasi p{
