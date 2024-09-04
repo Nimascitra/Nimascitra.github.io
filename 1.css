@@ -103,7 +103,7 @@ nav button{
 }
 
 /* ukuran mobile */
-@media screen and (max-width:576px){
+@media screen and (max-width:500px){
     nav ul{
         display: flex;
     }
@@ -137,6 +137,7 @@ nav button{
 /* hero */
 .hero{
     width: 100%;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -577,8 +578,7 @@ footer .container-footer .sosmed .icon{
         font-weight: 400;
     }
     .apbdes .tampilkan{
-        margin-top: 20px;
-        margin-left: 0px;
+        margin: 20px 0px 0px 0px;
         width: 120px;
         height: 32px;
         font-size: 14px;
