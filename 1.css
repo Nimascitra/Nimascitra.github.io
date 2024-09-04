@@ -4,36 +4,36 @@
     margin: 0;
     padding: 0;
 }
+body{
+    font-family: roboto;
+}
 
 /* navbar */
 nav{
-    height: 80px;
-    width: 100%;
     display: flex;
+    background-color:white;
+    justify-content: space-around;
+    width: 100%;
+    height: 80px;
     align-items: center;
-    justify-content: center;
     position: fixed;
-    background-color: white;
-    z-index: 999;
+    z-index: 100;
 }
 
-nav .navbar{
+nav ul{
     display: flex;
-    width: 80%;
-    align-items: center;
+    list-style: none;
+    width: 40%;
     justify-content: space-between;
 }
 
-nav .navbar a{
-    font-family: roboto ;
-    color: #9f9f9f;
-    text-decoration: none;  
+nav ul li {
+    color:  #9f9f9f;
+    text-decoration: none;
     font-size: 22px;
-    font-family: roboto;
-    font-weight: 400;
 }
 
-nav .navbar .login{
+nav button{
     color:white;
     font-weight: 400;
     font-size: 22px;
@@ -42,6 +42,96 @@ nav .navbar .login{
     height: 47px;
     border: 0px solid white;
     border-radius: 10px;
+}
+
+
+/* hamburger menu */
+ .menu-toggle{
+   display: none;
+   flex-direction: column;
+   height: 20px;
+   justify-content: space-between;
+   position: relative;
+}
+
+.menu-toggle input{
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    opacity: 0;
+    left: -6px;
+    top: -3px;
+    cursor: pointer;
+}
+
+ .menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color:  #7c7c7c;
+    border-radius: 3px;
+}
+
+/* hmb anim */
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(0, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+
+/* ukuran tablet */
+@media screen and (max-width:768px){
+    nav ul{
+        width: 50%;
+    }
+}
+
+/* ukuran mobile */
+@media screen and (max-width:576px){
+    nav ul{
+        display: flex;
+    }
+
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 80%;
+        height: 100vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        z-index: -2;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    nav ul.slide {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .menu-toggle{
+        display: flex;
+    }
 }
 
 /* hero */
@@ -68,12 +158,10 @@ nav .navbar .login{
     font-size: 30px;
     font-weight: 500;
     color: white;
-    font-family: roboto;
 }
 
 .apbdes .container-apb p{
     font-size: 26px;
-    font-family: roboto;
     font-weight: 500;
     color: white;
 }
@@ -119,7 +207,6 @@ section{
 
 .containerberita .berita label{
     background-color:  #65D4B3;
-    font-family: roboto;
     font-size: 14px;
     font-weight: 700;
     color: white;
@@ -135,7 +222,6 @@ section{
     color: #9E9E9E;
     font-weight: 700;
     font-size: 30px;
-    font-family: roboto;
     margin-bottom: 60px;
 }
 
@@ -154,21 +240,18 @@ section{
     color: #9f9f9f;
     font-weight: 500;
     font-size: 20px;
-    font-family: roboto;
 }
 
 .containerberita .berita .txberita h1{
     color: #9f9f9f;
     font-weight: 400;
     font-size: 20px;
-    font-family: roboto;
 }
 
 .containerberita .berita .txberita .admin{
     color: #9f9f9f;
     font-weight: 400;
     font-size: 20px;
-    font-family: roboto;
     margin-top: 11px;
 }
 
@@ -178,7 +261,6 @@ section{
     color: white;
     font-weight: 700;
     font-size: 20px;
-    font-family: roboto;
     border: 0px;
     border-radius: 7px;
     width: 173px;
@@ -195,7 +277,6 @@ section{
     color: #9E9E9E;
     font-weight: 700;
     font-size: 30px;
-    font-family: roboto;
     margin-bottom: 76px;
 }
 
@@ -213,21 +294,18 @@ section{
     color: #9f9f9f;
     font-weight: 500;
     font-size: 20px;
-    font-family: roboto;
 }
 
 .containerinformasi .informasi .txinformasi h1{
     color: #9f9f9f;
     font-weight: 400;
     font-size: 20px;
-    font-family: roboto;
 }
 
 .containerinformasi .informasi .txinformasi .tempat{
     color: #9f9f9f;
     font-weight: 400;
     font-size: 20px;
-    font-family: roboto;
     margin-top: 11px;
 }
 
@@ -237,7 +315,6 @@ section{
     color: white;
     font-weight: 700;
     font-size: 20px;
-    font-family: roboto;
     border: 0px;
     border-radius: 7px;
     width: 173px;
@@ -273,7 +350,6 @@ hr{
 }
 
 .container-potensi h1{
-    font-family: roboto;
     font-weight: 700;
     font-size: 30px;
     color: #9E9E9E;
@@ -299,7 +375,6 @@ hr{
     margin:14px 39px;
     font-size: 18px;
     font-weight: 500;
-    font-family: roboto;
     color: #9E9E9E;
 }
 
@@ -314,7 +389,6 @@ hr{
 .layanan h1{
     font-size: 30px;
     font-weight: 700;
-    font-family: roboto;
     color: #9E9E9E;
     text-decoration: underline;
     text-align: center;
@@ -338,7 +412,6 @@ hr{
 
 .layanan .card h3{
     text-align: center;
-    font-family: roboto;
     font-size: 20px;
     font-weight: 500;
     color: #9E9E9E;
@@ -347,7 +420,6 @@ hr{
 
 .layanan .card p{
     text-align: center;
-    font-family: roboto;
     font-size: 18px;
     font-weight: 400;
     color: #9E9E9E;
@@ -363,7 +435,7 @@ hr{
 }
 
 .peta h1{
-    font-family: roboto;
+    
     text-decoration: underline;
     font-weight: 700;
     font-size: 30px;
@@ -382,7 +454,7 @@ hr{
 }
 
 .peta .container .txpeta p{
-    font-family: roboto;
+    
     font-weight: 500;
     font-size: 24px;
     color: #9E9E9E;
@@ -397,14 +469,12 @@ hr{
     width: 24px;
     height: 24px;
     position: absolute;
-    left: 128px;
 }
 
 .peta .container .txpeta li{
     font-size: 22px;
     font-weight: 500;
     color: #9E9E9E;
-    font-family: roboto;
     list-style: none;
     margin-bottom: 19px;
 }
@@ -414,7 +484,6 @@ hr{
     height: 56px;
     background-color: #65D4B3;
     color: white;
-    font-family: roboto;
     font-weight: 700;
     font-size: 22px;
     margin-top: 87px;
@@ -436,14 +505,12 @@ footer{
 }
 
 footer .container-footer p{
-    font-family: roboto;
     font-weight: 500;
     font-size: 24px;
     color: #9f9f9f;
 }
 
 footer .container-footer .sosmed h4{
-    font-family: roboto;
     font-weight: 500;
     font-size: 24px;
     color: #9f9f9f;
