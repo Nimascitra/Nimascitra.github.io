@@ -233,7 +233,6 @@ section{
 
 .containerberita .berita .txberita{
     display: inline-block;
-    word-spacing: 2px;
     margin-left: 42px;
 }
 
@@ -287,7 +286,6 @@ section{
 }
 
 .containerinformasi .informasi .txinformasi{
-    word-spacing: 2px;
     margin-left: 42px;
 }
 
@@ -354,10 +352,9 @@ hr{
     font-weight: 700;
     font-size: 30px;
     color: #9E9E9E;
-    margin-top: 69px;
+    margin: 69px 0px 53px 0px;
     text-decoration: underline;
     text-align: center;
-    margin-bottom: 53px;
 }
 
 .potensi .card{
