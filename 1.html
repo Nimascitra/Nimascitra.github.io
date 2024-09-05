@@ -1,58 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>desa pintar</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desa Pintar - Beranda</title>
         <link rel="stylesheet" href="1.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        </style>
     </head>
     <body>
-            <!-- navbar -->
-            <nav>
-                <div class="logo">
-                   <img src="./images/logo.png" alt="">
-                </div>
-        
-                <ul>
-                    <li><a href=""></a>Beranda</li>
-                    <li><a href=""></a>Profil</li>
-                    <li><a href=""></a>Potensi</li>
-                    <li><a href=""></a>Layanan</li>
-                    <li><a href=""></a>Peta</li>
-                </ul>
-        
-                <button>Login</button>
-        
-                <div class="menu-toggle">
-                    <input type="checkbox">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
-            <script src="script.js"></script>
 
-            <!-- hero -->
-             <img class="hero" src="./images/hero.jpg" alt="hero">
+        <!-- navbar -->
+        <nav>
+            <div class="logo">
+                <img src="./images/logo.png" alt="Logo">
+            </div>
+            <ul>
+                <li><a class="beranda" href="#">Beranda</a></li>
+                <li><a href="#">Profil</a></li>
+                <li><a href="#">Potensi</a></li>
+                <li><a href="#">Layanan</a></li>
+                <li><a href="#">Peta</a></li>
+            </ul>
+            <button>Login</button>
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
 
-             <!-- APBDES -->
-            <div class="apbdes">
+        <!-- hero -->
+         <div class="hero">
+        <img src="./images/hero.jpg" alt="hero">
+        </div>
 
-                <div class="container-apb">
-                    <h2>APBDES</h2>
-                    <p>
-                        Transparasi pengelolaan keuangan merupakan bentuk pengawasan
-                        penggunaan dan pengelolaan anggaran pendapatan dan belanja desa,
-                        serta sebagai sosialisasi dan wadah penerapan program "Padat
-                        Karya". Berikut kami sajikan grafik pendapatan dan belanja desa.
-                    </p>
-                </div>
-                <input type="submit" value="Tampilkan" class="tampilkan">
+        <!-- APBDES -->
+        <div class="apbdes">
 
+            <div class="container-apb">
+                <h2>APBDES</h2>
+                <p>
+                    Transparasi pengelolaan keuangan merupakan bentuk pengawasan
+                    penggunaan dan pengelolaan anggaran pendapatan dan belanja desa,
+                    serta sebagai sosialisasi dan wadah penerapan program "Padat
+                    Karya". Berikut kami sajikan grafik pendapatan dan belanja desa.
+                </p>
             </div>
 
-            <!-- Berita -->
-         <section>
-                <div class="containerberita">
+            <div class="apb-btn">
+                <input type="submit" value="Tampilkan" class="tampilkan">
+            </div>
+        
+        </div>
 
+        <!-- Berita -->
+            <section>
+                <div class="containerberita">
+            
                     <h2 align="center">BERITA</h2>
                     <div class="berita">
                             <img src="./images/berita1.jpg" alt="berita1">
@@ -63,7 +70,7 @@
                             <h1 class="admin">Admin</h2>
                             </div>
                     </div>
-
+            
                     <div class="berita">
                             <img src="./images/berita2.jpg" alt="berita2">
                             <div class="txberita">
@@ -72,7 +79,7 @@
                             <h1 class="admin">Admin</h2>
                             </div>
                     </div>
-
+            
                     <div class="berita">
                             <img src="./images/berita3.jpg" alt="berita3">
                             <div class="txberita">
@@ -84,11 +91,11 @@
                     <div class="btn"> <input type="submit" value="Lihat Semua" class="lihatsemua" align="center"> </div>
                         
                 </div>
-
+            
             <!-- informasi -->
             <div class="containerinformasi">
                 <h2 align="center">INFORMASI</h2>
-
+            
                 <div class="informasi">
                     <img src="./images/informasi1.jpeg" alt="informasi1">
                     <div class="txinformasi">
@@ -97,7 +104,7 @@
                     <h1 class="tempat">alun alun klaten</h2>
                     </div>
                 </div>
-
+            
                 <div class="informasi">
                     <img src="./images/informasi2.jpeg" alt="informasi2">
                     <div class="txinformasi">
@@ -106,7 +113,7 @@
                     <h1 class="tempat">alun alun klaten</h2>
                     </div>
                 </div>
-               
+            
                 <div class="informasi">
                     <img src="./images/informasi3.jpeg" alt="informasi3">
                     <div class="txinformasi">
@@ -115,49 +122,51 @@
                     <h1 class="tempat">Monumen juang</h2>
                     </div>
                 </div>
-
+            
                 <div class="btn"><input type="submit" value="Lihat Semua" class="lihatsemua" align="center"></div>
             </div>
-         </section>
-        <hr>
+            </section>
+            <hr>
+            
 
-        <!-- Potensi -->
-        <div class="container-potensi">
-            <h1>POTENSI</h1>
-            <div class="potensi">
-                <div class="sec">
-                    <div class="card">
-                    <img src="./images/potensi1.jpg" alt="potensi1">
-                    <p>Octa busana modiste melayani jahit kebaya, bordir dan payet</p>
-                    </div>
+            <!-- Potensi -->
+            <div class="container-potensi">
+                <h1>POTENSI</h1>
+                <div class="potensi">
+                    <div class="sec">
 
-                    <div class="card">
-                    <img src="./images/potensi2.jpg" alt="potensi2">
-                    <p>Bengkel waton bleyer melayani Tune-up dan ganti oli sedia spare-part</p>
-                    </div>
-
-                    <div class="card">
-                    <img src="./images/potensi3.jpg" alt="potensi3">
-                    <p>Guru mengaji mengajar privat santriwati Al Quran dan hadist</p>
-                    </div>
-
-                    <div class="card">
-                    <img src="./images/potensi4.jpg" alt="potensi4">
-                    <p>Toko kue menyediakan berbagai roti dan kue dapat melayani pemesanan banyak</p>
-                    </div>
-
-                    <div class="card">
-                    <img src="./images/potensi5.jpg" alt="potensi5">
-                    <p>Toko bunga menyediakan berbagai macam bunga melayani pemesanan bucket</p>
-                    </div>  
-
-                </div>   
+                        <div class="card">
+                        <img src="./images/potensi1.jpg" alt="potensi1">
+                        <p>Octa busana modiste melayani jahit kebaya, bordir dan payet</p>
+                        </div>
+                    
+                        <div class="card">
+                        <img src="./images/potensi2.jpg" alt="potensi2">
+                        <p>Bengkel waton bleyer melayani Tune-up dan ganti oli sedia spare-part</p>
+                        </div>
+                    
+                        <div class="card">
+                        <img src="./images/potensi3.jpg" alt="potensi3">
+                        <p>Guru mengaji mengajar privat santriwati Al Quran dan hadist</p>
+                        </div>
+                    
+                        <div class="card">
+                        <img src="./images/potensi4.jpg" alt="potensi4">
+                        <p>Toko kue menyediakan berbagai roti dan kue dapat melayani pemesanan banyak</p>
+                        </div>
+                    
+                        <div class="card">
+                        <img src="./images/potensi5.jpg" alt="potensi5">
+                        <p>Toko bunga menyediakan berbagai macam bunga melayani pemesanan bucket</p>
+                        </div>  
+                    
+                    </div>   
+                </div>
             </div>
-        </div>
 
 
         <!-- layanan -->
-        <div class="layanan">
+            <div class="layanan">
                 <h1>LAYANAN</h1>
                 <div class="card-layanan">
                         <div class="card" align="center">
@@ -168,7 +177,7 @@
                             masyarakat mendapatkan informasi<br>
                             dan mengurus secara mandiri </p>
                         </div>
-
+            
                         <div class="card" align="center">
                             <img src="./images/layanan2.png" alt="layanan">
                             <h3>Peizinan</h3>
@@ -177,7 +186,7 @@
                             berbeda, alur proses yang fleksible,<br>
                             agarprosesnya menjadi lebih mudah</p>
                         </div>
-
+            
                         <div class="card" align="center">
                             <img src="./images/layanan3.png" alt="layanan">
                             <h3>Pendidikan</h3>
@@ -187,52 +196,62 @@
                             hingga ke pergurian tinggi</p>
                         </div>
                 </div>
-        </div>
+            </div>
 
-
-        <!-- Peta -->
+            <!-- Peta -->
             <div class="peta">
                 <h1>PETA DIGITAL</h1>       
                 <div class="container">
                     <div class="txpeta">
-                    <p>Sistem informasi geospasial (peta digital) memuat segala informasi berbasis lokasi.
-                        Peta digital dapa digunakan sebagai alat bantu dalam perumusan
-                        kebijakan serta mendukung pelaksanaa kegiatan yang berkaitan dengan tata ruang kebumian.
-                        kemudian dari kesediaan data geospasial desa akan dapat dibangun analisis data
-                        spasial yang akan menghasilkan informasi. 
-                        <br>
-                    </p>
-                    <ul>
-                    <li><img src="./images/layer.png" alt="layer" class="icon"> Layer batas wilayah</li>
-                    <li><img src="./images/lokasi.png" alt="lokasi" class="icon" > Lokasi penting</li>
-                    <li><img src="./images/infografis.png" alt="infografis" class="icon"> Infografis desa</li>
-                    </ul>
-                    <input type="submit" value="Selengkapnya" class="selengkapnya">
+                        <p>Sistem informasi geospasial (peta digital) memuat segala informasi berbasis lokasi.
+                            Peta digital dapa digunakan sebagai alat bantu dalam perumusan
+                            kebijakan serta mendukung pelaksanaa kegiatan yang berkaitan dengan tata ruang kebumian.
+                            kemudian dari kesediaan data geospasial desa akan dapat dibangun analisis data
+                            spasial yang akan menghasilkan informasi. 
+                            <br>
+                        </p>
+                        <ul class="features">
+                            <li><img src="./images/layer.png" alt="layer" class="icon"> Layer batas wilayah</li>
+                            <li><img src="./images/lokasi.png" alt="lokasi" class="icon" > Lokasi penting</li>
+                            <li><img src="./images/infografis.png" alt="infografis" class="icon"> Infografis desa</li>
+                        </ul>
+                        <input type="submit" value="Selengkapnya" class="selengkapnya">
                     </div>
+            
+                    <div class="i-peta">
                     <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.875760255087!2d110.60828697476494!3d-7.696479992320924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a43c08fa2adfd%3A0x85ec7a49805201dd!2sPT.%20Sandbox%20Indonesia%20Juara!5e0!3m2!1sen!2sid!4v1724723016802!5m2!1sen!2sid" width="535" height="535" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>          
                 </div>
             </div>
-         
 
-         <!-- footer -->
-            <footer>
-                
-                <div class="container-footer">
-                    <p>Desa pintar merupakan inovasi desa dibidang tegnologi dan informasi, yang diawali dengan pembangunan basis<br>
-                    data geospaasial yang dapat digunakan sebagai pondasi dalam pembangunan dan pengembangan desa secara<br>
-                    berkelanjutan</p>
+            <!-- footer -->
+                <footer>
                     
-                     <div class="sosmed">
-                        <h4>Copyright © 2018 Powered By Desapintar - All Rights Reserved</h4>
-                        <div class="icon">
-                        <img src="./images/fb.png" alt="pict">
-                        <img src="./images/twt.png" alt="pict">
-                        <img src="./images/yt.png" alt="pict">
-                        </div>
-                     </div>
-                </div>
+                    <div class="container-footer">
+                        <p>Desa pintar merupakan inovasi desa dibidang tegnologi dan informasi, yang diawali dengan pembangunan basis<br>
+                        data geospaasial yang dapat digunakan sebagai pondasi dalam pembangunan dan pengembangan desa secara<br>
+                        berkelanjutan</p>
+                        
+                            <div class="sosmed">
+                                <h4>Copyright © 2018 Powered By Desapintar - All Rights Reserved</h4>
+                                <div class="icon">
+                                    <img src="./images/fb.png" alt="pict">
+                                    <img src="./images/twt.png" alt="pict">
+                                    <img src="./images/yt.png" alt="pict">
+                                </div>
+                            </div>
+                    </div>
                 
-            </footer>
-
+                </footer>
     </body>
 </html>
+
+<!-- SCRIPT HAMBURGER MENU -->
+<script>
+const menuToggle = document.querySelector('.menu-toggle input');
+const nav = document.querySelector('nav ul');
+
+menuToggle.addEventListener('click', function( ) {
+nav.classList.toggle('slide');
+});
+</script>
