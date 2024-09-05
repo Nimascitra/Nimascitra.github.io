@@ -285,6 +285,8 @@ section{
 .containerinformasi .informasi img{
     border-radius: 50%;
     margin-bottom: 46px;
+    height: 150px;
+    width: 150px;
 }
 
 .containerinformasi .informasi .txinformasi{
@@ -322,11 +324,14 @@ section{
     height: 38px;
 }
 
-hr{
-    width: 80%;
-    margin-top: 86px;
-    margin-left: 129px;
-    margin-bottom: 69px;
+.hr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hr hr {
+    width: 85%;
 }
 
 /* poteni */
