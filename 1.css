@@ -105,7 +105,7 @@ nav button {
 }
 
 /* ukuran mobile */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
     .menu-toggle {
         display: flex;
     }
@@ -513,16 +513,13 @@ footer{
     align-items:center ;
 }
 
-footer .container-footer p{
+footer .container-footer {
     font-weight: 500;
     font-size: 24px;
     color: #9f9f9f;
 }
 
 footer .container-footer .sosmed h4{
-    font-weight: 500;
-    font-size: 24px;
-    color: #9f9f9f;
     margin-top: 24px;
 }
 
@@ -550,7 +547,7 @@ footer .container-footer .sosmed .icon{
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 700px) {
     .apbdes {
         height: 100%;
         flex-direction: column;
@@ -560,17 +557,69 @@ footer .container-footer .sosmed .icon{
     .container-apb p {
         font-size: 16px;
     }
-
+    
     .i-peta iframe {
         width: calc(100vw - 144px);
     }
-
     .peta {
-        padding: 72px 64px;
+        padding: 50px;
+    }
+    .txpeta p{
+        font-size: 18px;
+    }
+    .features li{
+        font-size: 18px;
     }
     section{
         padding: 0px;
         justify-content: center;
     }
+    .potensi .card{
+        width: 300px;
+        height: 325px;
+    }
+    .potensi .card img{
+        width: 300px;
+        height: 250px ;
+    } 
+    .potensi .card p{
+        margin:14px 39px;
+        font-size: 14px;
+    }
+    .layanan{
+        padding: 50px ;
+    }
+    footer .container-footer {
+        font-size: 16px;
+    }
+    .icon img{
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
+    }
+    footer{
+        padding: 30px 70px;
+    }
+}
 
+@media (max-width: 500px){
+    .containerberita .berita .txberita p{
+        font-size: 18px;
+    }
+    .containerberita .berita .txberita h1{
+        font-size: 18px;
+    }
+    .containerberita .berita .txberita .admin{
+        font-size: 18px;
+    }
+    .berita img{
+        width: 175px;
+        height: 90px;
+    }
+    .containerberita .berita .txberita{
+        margin-left: 20px;
+    }
+    .containerberita, .containerinformasi{
+        width: 400px; 
+    }
 }
