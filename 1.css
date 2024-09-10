@@ -21,7 +21,6 @@ nav ul {
     list-style: none;
     width: 40%;
     justify-content:center;
-    gap: 46px;
 }
 
 nav ul li a {
@@ -109,13 +108,15 @@ nav button {
     .menu-toggle {
         display: flex;
     }
-
+    nav{
+        height: 60px;
+    }
     nav ul {
         position: absolute;
         right: 0;
-        top: 0;
-        width: 80%;
-        height: 100vh;
+        top: 20px;
+        width: 100%;
+        height: 400px;
         justify-content: space-evenly;
         flex-direction: column;
         align-items: center;
@@ -579,8 +580,8 @@ footer .container-footer .sosmed .icon{
         height: 325px;
     }
     .potensi .card img{
-        width: 300px;
-        height: 250px ;
+        width: 280px;
+        height: 240px ;
     } 
     .potensi .card p{
         margin:14px 39px;
@@ -604,17 +605,17 @@ footer .container-footer .sosmed .icon{
 
 @media (max-width: 500px){
     .containerberita .berita .txberita p{
-        font-size: 18px;
+        font-size: 16px;
     }
     .containerberita .berita .txberita h1{
-        font-size: 18px;
+        font-size: 16px;
     }
     .containerberita .berita .txberita .admin{
-        font-size: 18px;
+        font-size: 16px;
     }
     .berita img{
-        width: 175px;
-        height: 90px;
+        width: 150px;
+        height: 110px;
     }
     .containerberita .berita .txberita{
         margin-left: 20px;
@@ -623,7 +624,7 @@ footer .container-footer .sosmed .icon{
         width: 400px; 
     }
     nav button {
-        padding: 5px 10px;
+        padding: 5px 20px;
         font-size: 16px;
     }
     nav .logo img{
@@ -631,20 +632,18 @@ footer .container-footer .sosmed .icon{
         height: 30px;
     }
     .containerinformasi .informasi img{
-        height: 110px;
-        width: 110px;
+        height: 120px;
+        width: 120px;
     }
-   
     .containerinformasi .informasi .txinformasi p{
-        font-size: 18px;
+        font-size: 16px;
     }
-    
     .containerinformasi .informasi .txinformasi h1{
-        font-size: 18px;
+        font-size: 16px;
     }
     
     .containerinformasi .informasi .txinformasi .tempat{
-        font-size: 18px;
+        font-size: 16px;
     }
     .hr hr {
         margin-top: 70px;
@@ -654,10 +653,16 @@ footer .container-footer .sosmed .icon{
     }
     .containerberita .berita label{
         top: 170px;
-        left: 90px;
+        left: 100px;
     }
     .hero img{
-       height: 400px;
+       height: 300px;
     }
-    
+    .potensi .card{
+        width: 280px;
+        height: 320px;
+    }
+    .containerinformasi .informasi .txinformasi{
+        margin-left: 20px;
+    }
 }
