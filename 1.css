@@ -656,5 +656,8 @@ footer .container-footer .sosmed .icon{
         top: 170px;
         left: 90px;
     }
+    .hero img{
+       height: 400px;
+    }
     
 }
