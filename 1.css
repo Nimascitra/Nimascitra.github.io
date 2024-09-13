@@ -539,15 +539,16 @@ footer .container-footer .sosmed .icon{
     justify-content: space-between;
 }
 
-
 /* RESPONSIVE */
 @media (max-width: 1200px) {
     .container {
         flex-direction: column-reverse;
     }
-
     .i-peta iframe {
         width: calc(100vw - 238px);
+    }
+    .container-potensi .potensi .sec{
+        justify-content: center;
     }
 }
 
@@ -579,8 +580,8 @@ footer .container-footer .sosmed .icon{
         justify-content: center;
     }
     .potensi .card{
-        width: 300px;
-        height: 325px;
+        width: 280px;
+        height: 320px;
     }
     .potensi .card img{
         width: 280px;
@@ -600,9 +601,6 @@ footer .container-footer .sosmed .icon{
         width: 40px;
         height: 40px;
         margin-top: 10px;
-    }
-    footer{
-        padding: 30px 70px;
     }
 }
 
@@ -644,7 +642,6 @@ footer .container-footer .sosmed .icon{
     .containerinformasi .informasi .txinformasi h1{
         font-size: 16px;
     }
-    
     .containerinformasi .informasi .txinformasi .tempat{
         font-size: 16px;
     }
@@ -661,11 +658,10 @@ footer .container-footer .sosmed .icon{
     .hero img{
        height: 300px;
     }
-    .potensi .card{
-        width: 280px;
-        height: 320px;
-    }
     .containerinformasi .informasi .txinformasi{
         margin-left: 20px;
+    }
+    footer{
+        padding: 30px 70px;
     }
 }
